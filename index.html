@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CKS Shoppe — Software & Digital Products</title>
+<meta name="description" content="CKS Shoppe — Windows, Office, Antivirus and digital products at great prices.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="top">🔥 CKS Shoppe — Genuine Digital Products • Fast Delivery • WhatsApp Support</div>
+  <nav class="nav">
+    <a class="logo" href="#">CKS <span>SHOPPE</span></a>
+    <div class="search"><input id="search" placeholder="Search Windows, Office, Antivirus..."><button onclick="searchProducts()">Search</button></div>
+    <div class="navlinks"><a href="#products">Products</a><a href="#categories">Categories</a><a href="#contact">Contact</a><button class="cart" onclick="openCart()">🛒 Cart <b id="cartCount">0</b></button></div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="eyebrow">CKS SHOPPE</p>
+    <h1>Premium Software.<br><span>Better Prices.</span></h1>
+    <p class="sub">Windows, Microsoft Office, Antivirus and other digital products — delivered quickly after payment.</p>
+    <a class="btn" href="#products">Shop Now →</a>
+  </div>
+  <div class="hero-card"><div class="badge">BEST VALUE</div><h3>Windows + Office</h3><p>Digital activation products</p><strong>From ₹499</strong></div>
+</section>
+
+<section class="trust">
+  <div>⚡ <b>Instant Delivery</b><small>Digital products</small></div>
+  <div>🔒 <b>Secure Payment</b><small>Protected checkout</small></div>
+  <div>💬 <b>WhatsApp Support</b><small>Quick assistance</small></div>
+  <div>🧾 <b>GST Invoice</b><small>For eligible orders</small></div>
+</section>
+
+<section id="categories" class="section">
+  <div class="section-head"><h2>Shop by Category</h2></div>
+  <div class="cats">
+    <button onclick="filterCat('Windows')">🪟 Windows</button>
+    <button onclick="filterCat('Office')">📄 Microsoft Office</button>
+    <button onclick="filterCat('Antivirus')">🛡️ Antivirus</button>
+    <button onclick="filterCat('Tools')">🧰 Utilities</button>
+  </div>
+</section>
+
+<section id="products" class="section">
+  <div class="section-head"><h2>Featured Products</h2><button class="clear" onclick="filterCat('All')">View All</button></div>
+  <div id="productGrid" class="grid"></div>
+</section>
+
+<section class="deal">
+  <div><p class="eyebrow">LIMITED DEALS</p><h2>Upgrade your PC without overspending.</h2><p>Build your digital software collection with CKS Shoppe.</p></div>
+  <a class="btn light" href="#products">Explore Deals</a>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Need Help?</h2>
+  <p>Contact CKS Shoppe for product selection, activation support and order assistance.</p>
+  <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp Us</a>
+</section>
+
+<footer><div><b>CKS SHOPPE</b><p>Software & Digital Products</p></div><div><b>Quick Links</b><p><a href="#products">Products</a> · <a href="#contact">Support</a></p></div><div><b>Important</b><p>Replace the demo WhatsApp number and connect your payment gateway before launch.</p></div><div class="copy">© 2026 CKS Shoppe. All rights reserved.</div></footer>
+
+<div id="cartModal" class="modal"><div class="modalbox"><button class="x" onclick="closeCart()">×</button><h2>Your Cart</h2><div id="cartItems"></div><div class="total">Total: ₹<span id="total">0</span></div><button class="btn full" onclick="checkout()">Proceed to Checkout</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
